@@ -16,5 +16,17 @@ namespace MessageBoxPrac2
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("내용");
+            MessageBox.Show("내용", "제목");
+            MessageBox.Show("내용", "제목"
+                , MessageBoxButtons.RetryCancel);
+            MessageBox.Show("내용", "제목"
+                , MessageBoxButtons.AbortRetryIgnore
+                , MessageBoxIcon.Asterisk);
+
+        }
     }
 }
